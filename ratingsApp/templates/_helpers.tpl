@@ -48,6 +48,7 @@ Selector labels
 {{- define "ratingsApp.selectorLabels" -}}
 app.kubernetes.io/name: {{ include "ratingsApp.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
+appname: nginx
 {{- end }}
 
 {{/*
